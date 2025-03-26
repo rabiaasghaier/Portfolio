@@ -3,119 +3,376 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rabie Sghaier - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add some basic styles for the navigation bar */
+        nav {
+            background-color: #6c63ff;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        /* Add some padding to the body to prevent content from being hidden behind the nav */
+        body {
+            padding-top: 50px; /* Adjust this value based on your nav height */
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">Rabie Sghaier</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Navigation Bar -->
+ <nav>
+    <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#associative-experience">Associative Experience</a></li>
+        <li><a href="#languages">Languages</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+    </ul>
+</nav>
 
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <div class="hero-image">
-                    <img src="asset/rabie.jpg" alt="Rabie Sghaier">
-                </div>
-                <div class="hero-text">
-                    <h1>Rabie Sghaier</h1>
-                    <p>Data Scientist | Data Analyst | Machine Learning Enthusiast</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/rabie-sghaier-64776922b/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/rabiaasghaier" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="mailto:Rabiasghaier2@gmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
+    <!-- Introduction Section -->
+    <section id="introduction" class="introduction">
+        <div class="intro-content">
+            <div class="intro-photo">
+                <img src="asset/rabie.jpg" alt="Rabie Sghaier">
+            </div>
+            <div class="intro-text">
+                <h2>About Me</h2>
+                <p>Hello! I'm <strong>Rabie Sghaier</strong>, Data Analyst with a Bachelor’s degree in Big Data and Data Analysis. Experienced in leveraging data to enhance decision-making and optimize processes. Seeking to contribute to innovative projects in data science and continue developing my expertise.</p>
+
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/rabie-sghaier-64776922b/" target="_blank" class="social-link">
+                        <img src="logo/linked.png" alt="LinkedIn">
+                    </a>
+                    <a href="mailto:Rabiasghaier2@gmail.com" class="social-link">
+                        <img src="logo/gmail.png" alt="Gmail">
+                    </a>
+                    <a href="tel:+216 28 393 008"  target="_blank" class="social-link">
+                        <img src="logo/whatsapp.png" alt="WhatsApp">
+                    </a>
+                    <a href="https://github.com/rabiaasghaier" target="_blank" class="social-link">
+                        <img src="logo/git.png" alt="GitHub">
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- About Section -->
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Rabie Sghaier, a passionate Data Scientist with a Bachelor's degree in Big Data and Data Analysis. I specialize in leveraging data to drive insights and optimize processes.</p>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience">
-            <h2>Work Experience</h2>
-            <div class="experience-grid">
-                <div class="experience-card">
-                    <img src="logo/digital.jpg" alt="Digital Natives Logo">
-                    <h3>Data Scientist</h3>
-                    <p>Digital Natives | Feb 2024 - Jun 2024</p>
-                    <ul>
-                        <li>Developed intelligent customer management system</li>
-                        <li>Conducted strategic data analysis</li>
-                    </ul>
-                </div>
-                <div class="experience-card">
-                    <img src="logo/uib.jpg" alt="UIB Logo">
-                    <h3>Data Analyst Intern</h3>
-                    <p>UIB | Aug 2023 - Sep 2024</p>
-                    <ul>
-                        <li>Utilized Alteryx for data processing</li>
-                        <li>Automated workflows reducing processing time</li>
-                    </ul>
-                </div>
+    <!-- Work Experience Section -->
+    <section id="work-experience" class="work-experience">
+        <h2>Work Experience</h2>
+        <div class="experience-container">
+            <div class="experience-card">
+                <img src="logo/digital.jpg" alt="digital logo">
+                <h3>Data Scientist - Final year project</h3>
+                <p>Digital Natives- Fev 2024 to Juin 2024</p>
+                <p>-Developed an intelligent customer management system via WhatsApp, automating the collection and analysis of conversations to enhance customer relationships.</p>
+                <p>-Conducted data analysis to extract actionable insights, contributing to strategic decision-making.</p>
+                <p>-Generated reports and dashboards, improving decision-making processes.</p>
             </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <img src="logo/appart.jpg" alt="Apartment Price Analysis">
-                    <h3>Apartment Price Prediction</h3>
-                    <p>Machine learning model for apartment sale prices in Tunis</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
-                <div class="project-card">
-                    <img src="asset/images/dash.png" alt="BMW Sales Dashboard">
-                    <h3>BMW Sales Dashboard</h3>
-                    <p>Interactive Power BI dashboard for sales analytics</p>
-                    <a href="#" class="btn">View Project</a>
-                </div>
+            <div class="experience-card">
+                <img src="logo/uib.jpg" alt="uib Logo">
+                <h3>Data Analyst - Intern </h3>
+                <p>UIb - aout 2023 to sep 2024</p>
+                <p>-Utilized Alteryx to streamline data processing by cleaning, preparing, and automating workflows.</p>
+                <p>-Built automated workflows that reduced data processing time by 30%.</p>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-pill">Python</div>
-                <div class="skill-pill">SQL</div>
-                <div class="skill-pill">Power BI</div>
-                <div class="skill-pill">Machine Learning</div>
-                <div class="skill-pill">Data Analysis</div>
-                <div class="skill-pill">R</div>
+            <div class="experience-card">
+                <img src="logo/kick.jpg" alt="kicksoft Logo">
+                <h3>Data Analyst - Intern </h3>
+                <p>KickSoft - juin 2022 - sept. 2022</p>
+                <p>-Managed data collection, cleaning, and preparation for analysis, ensuring high-quality datasets.</p>
+                <p>-Analyzed player behaviors, identifying key trends and segments to improve game design.</p>
+                <p>-Designed interactive dashboards that visualized game performance metrics, aiding in product development.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
-            <p>Interested in collaborating or have a project in mind?</p>
-            <a href="mailto:Rabiasghaier2@gmail.com" class="btn-primary">Contact Me</a>
-        </section>
+    <!-- Big Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="logo/appart.jpg" alt="Apartment Logo">
+                <h3>Apartment Price Analysis and Prediction</h3>
+                <p>-Conducted analysis and prediction of apartment sale prices in Greater Tunis using the CRISP-DM methodology.</p>
+                <p>-Preprocessed data with Python, pandas, and NumPy.</p>
+                <p>-Developed regression models with scikit-learn, visualizing results in Jupyter Notebook.</p>
 
-        <footer>
-            <p>&copy; 2024 Rabie Sghaier. All Rights Reserved.</p>
-        </footer>
+                <a href="https://drive.google.com/drive/folders/1vKNfNLBgRFzcMjIzjOG4s0w0A28EhI9l?usp=sharing" class="btn">View Code</a>
+            </div>
+        
+             <div class="project-card">
+                <img src="asset/images/dash.png" alt="dash Logo">
+                <h3>BMW Sales Dashboard</h3>
+                <p>-Designed and developed a dynamic BMW Sales Dashboard using Power BI to visualize sales data and performance indicators.</p>
+                <p>-Imported, cleaned, and modeled BMW sales data for optimized dashboard performance using Power Query and data modeling techniques.</p>
+                <p>-Created interactive visualizations, including charts and KPIs, to present insights, enabling data-driven business decisions.</p>
+
+                <a href="https://drive.google.com/drive/folders/1WKMY0-CXT73L67vBLyKRobGawjR5mdmm?usp=sharing" class="btn">View Code</a>
+            </div>
+            <div class="project-card">
+                <img src="asset/images/nutri.jpg" alt="nutri Logo">
+                <h3>Nutri-Score Analyzer</h3>
+                <p>-Developed a decision-support application to evaluate the Nutri-Score of food products based on nutritional data, leveraging data analysis and machine learning to promote healthier eating choices.</p>
+                <p>-Data Collection: Extracted nutritional data from Open Food Facts.</p>
+                <p>-Data Cleaning: Processed missing values, handled outliers, and split data into training and testing sets.</p>
+                <p>-Exploratory Data Analysis: Analyzed correlations and performed statistical tests (ANOVA, PCA).</p>
+                <p>-Predictive Modeling: Developed machine learning models for Nutri-Score prediction, optimized for accuracy and performance.</p>
+                <p>-Model Evaluation: Validated model performance and refined predictions.</p>
+                <p>-Deployment: Developed an application to predict Nutri-Scores, aiding informed dietary choices.</p>
+            </div>
+            <div class="project-card">
+                <img src="asset/images/finan.jpeg" alt="finance Logo">
+                <h3>MERN Finance Dashboard with Machine Learning Predictions</h3>
+                <p>-A MERN stack-based finance dashboard app with machine learning predictions, featuring a modern frontend and robust backend for efficient data handling.</p>
+                <p>-Frontend: Utilizes Vite for fast development, Redux Toolkit for efficient state management, Material UI for a polished UI, and Recharts for interactive charts.</p>
+                <p>-Backend: Built with Node.js as the runtime, Express.js as the framework for handling requests, and MongoDB for storing financial data.</p>
+                <p>-Machine Learning: Integrates predictive models to provide insights and forecasts in the finance domain.</p>
+                <p>-Predictive Modeling: Developed machine learning models for Nutri-Score prediction, optimized for accuracy and performance.</p>
+                <p>-Model Evaluation: Validated model performance and refined predictions.</p>
+                <p>-Scalability: A modern, scalable solution designed for performance and ease of maintenance with MERN stack technologies.</p>   
+            </div>
+        </div>
+
+    </section>
+
+   <!-- Certifications Section -->
+<section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <div class="certifications-container">
+        <div class="certification-card">
+            <img src="logo/honor.png" alt="Certification 1 Logo">
+            <p>Personal skills</p>
+            <a href="https://certificate.bcdiploma.com/check/20EA69DB055FF25081937144068D9F736AC9EE4C6670A7004A91B0DAD7F3760AN05mTVRTbjJUSXczMmNhZHo2cHdXMUlHRC9sNEMwZC95aG5oNUpHSVdDaHNhOW82" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-card">
+            <img src="logo/honor.png" alt="Certification 2 Logo">
+            <p>Entrepreneurial skills </p>
+            <a href="https://certificate.bcdiploma.com/check/64BCE13AD0E5F191FB6109E15D2161EF8E887FE4E5344817B9769B4A4458C7E0Z29hTGY4QWd0T3F0dWx1alNsdnZDS2ZhLzFuejVoOXVpdHA0dG50KzlNMlFkcnZp" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-card">
+            <img src="logo/honor.png" alt="Certification 3 Logo">
+            <p>Coding, Data analytics </p>
+            <a href="https://certificate.bcdiploma.com/check/D7FB1328FA8B7EBCBE1EB47F4CE439B91E855BFAD961ACD42382B94141541E55NDdFd29YR1FzOEQwbXVNTWxGMlJhRWxvTVNENzBzRHNSK084YUh3SXVBL0E5UVdC" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-card">
+            <img src="logo/linn.png" alt="Certification 4 Logo">
+            <p>Fundamentals of Data Visualization </p>
+            <a href="https://www.linkedin.com/learning/certificates/860a709213c2750f5f4a25f118f0095226001dcfafe086356e1cf6572a5d1c6c" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-card">
+            <img src="logo/linn.png" alt="Certification 5 Logo">
+            <p>The foundations of statistics </p>
+            <a href="https://www.linkedin.com/learning/certificates/4a365b32539c120197e6c4841c7c6820319772db0dc990708fba0fe2e58ea6dd" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <div class="certification-card">
+            <img src="logo/ibm.png" alt="Certification 6 Logo">
+            <p>R for Data Science </p>
+            <a href="https://www.credly.com/badges/e715668d-8a95-4274-95de-8b0464bb66ec/linked_in_profile" class="btn" target="_blank">View Certificate</a>
+        </div>
     </div>
+</section>
 
-    <!-- Font Awesome for social icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="asset/python.jpg" alt="Python Logo">
+            <p class="skill-name">Python</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/r_l.png" alt="R Logo">
+            <p class="skill-name">R</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/sql.png" alt="SQL Logo">
+            <p class="skill-name">SQL</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/power_bi.png" alt="Power BI Logo">
+            <p class="skill-name">Power BI</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/NoSQL.jpg" alt="NoSQL Logo">
+            <p class="skill-name">NoSQL</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/scraping.png" alt="Scraping Logo">
+            <p class="skill-name">Web Scraping</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/database.png" alt="data base Logo">
+            <p class="skill-name">Database Management </p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/clean.png" alt="cleaning Logo">
+            <p class="skill-name">Data Cleaning</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/data mod.png" alt="Modeling Logo">
+            <p class="skill-name">Data Modeling</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/Machine-learning-logo.png" alt="Machine Learning Logo">
+            <p class="skill-name">Machine Learning</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/dataana.jpg" alt="Data Analysis Logo">
+            <p class="skill-name">Data Analysis</p>
+        </div>
+        <div class="skill-card">
+            <img src="asset/Alteryx Logo.png" alt="Alteryx Logo">
+            <p class="skill-name">Alteryx</p>
+        </div>
+            <div class="skill-card">
+            <img src="logo/tableau.png" alt="Tableau Logo">
+            <p class="skill-name">Tableau</p>
+        </div>
+            <div class="skill-card">
+            <img src="logo/sas.png" alt="SAS Logo">
+            <p class="skill-name">SAS</p>
+        </div>
+
+        <div class="skill-card">
+            <img src="asset/big data.png" alt="data Logo">
+            <p class="skill-name">Big data</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/computer.jpg" alt="Computer Vision  Logo">
+            <p class="skill-name">Computer Vision </p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/web.png" alt="web Logo">
+            <p class="skill-name">Web Development </p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/team.png" alt="Teamwork  Logo">
+            <p class="skill-name">Teamwork</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/leader.png" alt="Leadership Logo">
+            <p class="skill-name">Leadership</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/com.png" alt="Communication Logo">
+            <p class="skill-name">Communication</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/probleme.png" alt="Problem Logo">
+            <p class="skill-name">Problem Solving</p>
+        </div>
+        <div class="skill-card">
+            <img src="logo/docker.png" alt="docker Logo">
+            <p class="skill-name">Docker</p>
+        </div>
+    </div>
+        
+
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-container">
+             <div class="education-card">
+                <img src="logo/esc.png" alt="esc Logo">
+                <h3>Master’s Degree in Data Science</h3>
+                <p>ESCT - Higher School of Commerce of Tunis - Present</p>
+               
+            </div>
+            <div class="education-card">
+                <img src="logo/univer.png" alt="University Logo">
+                <h3>Bachelor's Degree in Big Data and Data Analysis </h3>
+                <p>Central University of Tunis - 2021 to 2024</p> 
+            </div>
+            <div class="education-card">
+                <img src="logo/lycee.png" alt="lycee Logo">
+                <h3>High School Diploma in Computer Science</h3>
+                <p>EMTIYES High School of Sidi Hassine, Tunis - 2020 to 2021</p>
+               
+            </div>
+        </div>
+    </section>
+<!-- Experience Associative Section -->
+<section id="associative-experience" class="associative-experience">
+    <h2>Associative Experience</h2>
+    <div class="associative-container">
+        <div class="associative-card">
+            <img src="logo/aero.jpg" alt="Aerotech Logo">
+            <h3>Marketing Manager - Aerotech Club, Central University</h3>
+            <p>Aerotech Club- Jan 2022 to jan 2023</p>
+            <p>-Managed team roles and responsibilities to optimize performance.</p>
+            <p>-Motivated and mentored team members to maximize their potential.</p>
+        </div>
+        <div class="additional-images">
+            <img src="logo/1.jpg" alt="1st Prize Congratulations">
+            <img src="logo/2.jpg" alt="1st Prize Congratulations">
+        </div>
+    </div>
+</section>
+<!-- Languages Section -->
+<section id="languages" class="languages">
+    <h2>Languages</h2>
+    <div class="languages-container">
+        <div class="language-card">
+            <h3>English</h3>
+            <p>Intermediate</p>
+            <a href="logo/ang.pdf" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <div class="language-card">
+            <h3>French</h3>
+            <p>Intermediate</p>
+            <a href="logo/fr.pdf" class="btn" target="_blank">View Certificate</a>
+        </div>
+        <!-- Add more languages here if needed -->
+    </div>
+</section>
+
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>If you have any questions or would like to get in touch, feel free to contact me through any of the methods below.</p>
+    <div class="contact-info">
+        <p>Email: <a href="mailto:Rabiasghaier2@gmail.com">Rabiasghaier2@gmail.com</a></p>
+        <p>Phone: <a href="tel:+216 28 393 008">+216 28 393 008</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rabie-sghaier-64776922b/" target="_blank">LinkedIn Profile</a></p>
+        
+    </div>
+</section>
+
+
 </body>
 </html>
